@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+}
+
+.header_main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    width: 100%;
+    height: 80px;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+
+.header_image {
+    width: 50px;
+    height: 50px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.header_subtext {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+}
+
+.header_icons nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0px 50px;
+}
+
+.header_icons nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+.header_icons nav ul li a:hover {
+    background-color: #555;
+}
+
+section {
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#home {
+    background-color: #f4f4f4;
+}
+
+.home_container {
+    display: flex;
+    color: #fff;
+    background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(home_background.svg);
+    height: 100vh;
+}
+
+.icons_container {
+    flex: 1;
+    flex-direction: column;
+    margin-left: 0px;
+    padding: 0px;
+    margin: 150px 0px;
+}
+
+.icon {
+    border: 2px solid white;
+    width: 50px;
+    height: 50px;
+    padding-top: 15px;
+    font-size: 20px;
+}
+
+.content_container {
+    flex: 7;
+    margin-top: 150px;
+    margin-right: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content_container h1 {
+    font-size: 50px;
+    padding: 0px 0px 20px 10px;
+    margin-left: 0px;
+}
+
+.content_container p {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.content_container button {
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 250px;
+    height: 60px;
+    margin: 20px;
+}
+
+#about {
+    background-color: #ddd;
+}
+
+.about_container {
+    height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.about_content {
+    text-align: center;
+}
+
+.about_content h1 {
+    font-size: 40px;
+    padding: 80px 0px 20px 0px;
+}
+
+.horizontal_line {
+    border: 2px solid #007bff;
+    border-radius: 4px;
+    background-color: #007bff;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 40px;
+    height: 6px;
+}
+
+.about_content p {
+    margin: 0px 250px;
+    margin-bottom: 50px;
+}
+
+.main_container {
+    display: flex;
+}
+
+.side_container {
+    flex: 1;
+    margin-left: 100px;
+    margin-right: 0px;
+    padding: 20px;
+    text-align: start;
+}
+
+.side_container h1 {
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.side_container p {
+    padding: 10px;
+}
+
+.side_container button {
+    border: 1px solid rgba(0, 98, 185, 0.8);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 98, 185, 0.8);
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+}
+
+.skills_container {
+    flex: 1;
+    
+}
+
+.skills_container h1 {
+    font-size: 20px;
+}
+
+
+.skills_container {
+    margin-left: 80px;
+    margin-right: 180px;
+    padding: 20px;
+}
+
+/* Heading */
+.skills_container h1 {
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Flex container for skills */
+.skills_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 150px;
+    margin-right: 60px;
+}
+
+/* Style for each skill */
+.skill {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+#projects {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 100px;
+}
+
+.project_content {
+    padding-top: 100px;
+}
+
+.project_content h1 {
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.project_content p {
+    margin: 0px 200px;
+}
+
+.projects_main {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 150px;
+}
+
+.projects_visual {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.projects_visual img {
+    border-radius: 10px;
+}
+
+.projects_info {
+    flex: 1;
+    text-align: center;
+}
+
+.projects_info h1 {
+    text-align: start;
+    font-size: 40px;
+    padding: 0px 0px 20px 6px;
+    margin-left: 40px;
+}
+
+
+.projects_info p {
+    text-align: start;
+    margin: 0px 50px;
+    margin-bottom: 20px;
+}
+
+.case_study_button{
+    border: 1px solid rgba(0, 98, 185, 0.8);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 98, 185, 0.8);
+    padding: 10px;
+    margin-right: 200px;
+    width: 200px;
+    height: 50px;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 64px 16px;
+    background: linear-gradient(to right, rgba(0, 98, 185, 0.8), rgba(0, 98, 185, 0.8)), url(home_background.svg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Heading Styles */
+  .section_heading {
+    margin-bottom: 48px;
+  }
+  
+  .heading_main {
+    font-size: 40px;
+    margin-bottom: 16px;
+    color: #ffffff;
+  }
+  
+  .heading_sub {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #e0e0e0;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+  
+  /* Form Styles */
+  .form_container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    min-height: 700px;
+    margin: 100px auto;
+  }
+  
+  .contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    height: 100%;
+  }
+  
+  .form_field {
+    text-align: left;
+  }
+  
+  .form_label {
+    display: block;
+    margin-bottom: 12px;
+    color: #333333;
+    font-weight: 500;
+    font-size: 16px;
+  }
+  
+  .form_input {
+    width: 100%;
+    padding: 16px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: lightgray;
+    color: #333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .form_input::placeholder {
+    color: #666666;
+  }
+  
+  .form_input:focus {
+    outline: none;
+    border-color: #0056b3;
+    background-color: #ffffff;
+  }
+  
+  .message_input {
+    min-height: 200px;
+    resize: vertical;
+  }
+  
+  .submit_btn {
+    align-self: flex-end;
+    padding: 16px 48px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    margin-top: auto;
+  }
+  
+  .submit_btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+
+/* Footer Styles */
+.footer {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 40px 0;
+  }
+  
+  .footer_container {
+    max-width: 1200px;
+    margin: 100px auto 0;
+    padding: 0 20px;
+  }
+  
+  .footer_content {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    margin-bottom: 60px;
+  }
+  
+  /* Bio Section */
+  .footer_bio {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .name {
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .bio {
+    line-height: 1.6;
+    opacity: 0.9;
+    font-size: 1rem;
+  }
+  
+  /* Social Section */
+  .social_section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    max-width: 400px;
+  }
+  
+  .social_heading {
+    margin-bottom: 25px;
+    margin-right: 150px;
+    margin-left: 0px;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .social_links {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .social_links i {
+    font-size: 28px;
+    cursor: pointer;
+    color: #fff;
+    transition: opacity 0.3s ease;
+  }
+  
+  .social_links i:hover {
+    opacity: 0.7;
+  }
+  
+  /* Credits */
+  .footer_credits {
+    text-align: center;
+    padding-top: 40px;
+    border-top: 1px solid #333;
+    opacity: 0.8;
+    font-size: 0.9rem;
+  }
